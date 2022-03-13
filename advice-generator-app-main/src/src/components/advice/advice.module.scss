@@ -1,0 +1,55 @@
+@import '../../variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+.advice {
+  margin: auto;
+  max-width: 33%;
+  padding: 1rem;
+  background-color: $darkgrayishBlue;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  span {
+    text-align: center;
+    color: $Pneongreen;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+  }
+  p {
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    color: $Plightcyan;
+  }
+}
+
+.divider {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+divider::before, divider::after {
+  content: '';
+  width: 100%;
+  border: solid 1px #fff;
+}
+ 
+.dice {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $Pneongreen;
+  border-radius: 50%;
+  transform: translateY(2.5rem);
+}
+
+@media (max-width: $mobile) {
+  .advice {
+    max-width: 98%;
+  }
+}
